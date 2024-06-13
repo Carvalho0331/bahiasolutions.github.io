@@ -1,0 +1,35 @@
+.header{
+    padding: 40px 60px;
+    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    justify-items: center;
+}
+.menu{
+    display: flex;
+    gap: 10px;flex-wrap: wrap;
+    justify-content: center;
+}
+.menu a{
+    display: block;
+    font-size: 1.125rem;
+    font-weight: 600;
+    line-height: 150%;
+    background: #000000;
+    color: #ffffff;
+    padding: 1rem 2rem;
+    border-radius: .4rem;
+}
+
+@media (max-width:800px){
+    .header{
+        justify-content: center;
+        gap:  3rem;
+        margin-top: 2rem;
+    }
+    .menu a{
+        font-size: 1rem;
+        padding: 1rem;
+    }
+}

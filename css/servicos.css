@@ -1,0 +1,110 @@
+.grid-section{
+    display: grid;
+    justify-items: start;
+    gap: 2rem;
+    padding: 20px 60px;
+}
+.servicos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.imagem-container{
+    position: relative;   
+}
+.text-overlay{
+    line-height: 1.125;
+    padding: 25px;
+    top: 5px;
+    position: absolute;
+    margin: 0 auto;
+    display: grid;
+    gap: 2rem;
+}
+.imagem-container img{
+    width: 350px;
+    opacity: 0.8;
+}
+.servicos .imagem-container h3{
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    color: #ffffff;
+}
+.servicos .imagem-container p{
+    font-size: 1rem;
+    color: #ffff;
+    font-weight: bold;
+    /* color: #828282; */
+    font-size: rem;
+}
+.servicos .imagem-container a{
+    background: #000000;
+    padding: 1rem 2rem;
+    border-radius: 4px;
+    color: #ffff;
+    justify-self: start;
+}
+.botoes{
+    display: flex;
+    gap: .3rem;
+    justify-self: center;
+}
+.botoes div{
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+    border-radius: 10px;
+    background: #f7f7f7;
+}
+.detalhe{
+   
+}
+.detalhe::before{
+    
+    
+}
+.grid-servicos{
+    padding: 20px 60px;
+    display: grid;
+    justify-items: start;
+    gap: 2rem;
+
+}
+.faqs{
+    display: grid;
+    justify-items: start;
+}
+dt{
+    font-size: 1.25rem;
+    font-weight: normal;
+    line-height: 150%;
+    position: relative;
+    
+    
+}
+dt::before{
+    content: url(../img/icones/sinal.png);
+    height: 5px;
+    top: 3px;
+    right:-30px;
+    position: absolute;
+
+}
+dd{
+    font-size: 1rem;
+    font-weight: medium;
+    /* width: 100ch; Esse estava a fazer o  scrool */
+    color: #828282;
+    padding: 1rem 0rem;
+}
+@media (max-width:700px){
+    .grid-section,.grid-servicos{
+        padding: 0px 20px;
+    }
+    .detalhe::before{
+        /* top: 20px; */
+    }
+    
+}

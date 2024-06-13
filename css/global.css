@@ -1,0 +1,45 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+body{
+    font-family: "Inter", sans-serif;
+    display: grid;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.container-mother{
+    display: grid;      
+    gap: 3rem;
+    
+    
+}
+h2{
+    position: relative;
+    font-size: 3rem;
+}
+h2::before{
+    content: "";
+    border: 4px solid  black;
+    width: 100%;
+    top: 55px;
+    position: absolute;
+}
+
+@media (max-width:800px){
+    .container-mother{
+        padding: 0px;
+    }
+}
+@media (max-width:600px){
+    h2{
+        font-size: 2rem;
+    }
+    h2::before{
+        top: 40px;
+    }
+}
